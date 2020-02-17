@@ -4,11 +4,45 @@
   <!--指定特定数据库的jdbc驱动jar包的位置-->
    <classPathEntry location="D:\apache-maven-3.6.1\localRepository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar"/>
   <context id="context1" >
-    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/mianshi" userId="root" password="123456789" />
-    <javaModelGenerator targetPackage="com.woniu.testcache.model" targetProject="src/main/java" ></javaModelGenerator>
-    <sqlMapGenerator targetPackage="com.woniu.testcache.mapper" targetProject="src/main/java" ></sqlMapGenerator>
-    <javaClientGenerator targetPackage="com.woniu.testcache.mapper" targetProject="src/main/java" type="XMLMAPPER" />
-    <table schema="" tableName="" ></table>
-    <table schema="" tableName="" ></table>
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://47.111.31.86:3306/godaji" userId="godaji" password="godaji12ZS#" />
+    <javaModelGenerator targetPackage="com.woniu.godaji.pojo" targetProject="src/main/java" ></javaModelGenerator>
+    <sqlMapGenerator targetPackage="com.woniu.godaji.mapper" targetProject="src/main/java" ></sqlMapGenerator>
+    <javaClientGenerator targetPackage="com.woniu.godaji.mapper" targetProject="src/main/java" type="XMLMAPPER" />
+    <table schema="" tableName="B2C_serviceStatioin_ware"></table>
+    <table schema="" tableName="BTC_assess_wareReport"></table>
+    <table schema="" tableName="btc_DLFCSOUT"></table>
+    <table schema="" tableName="btc_ExpressInfo"></table>
+    <table schema="" tableName="btc_expressMode"></table>
+    <table schema="" tableName="BTC_goods_ware"></table>
+    <table schema="" tableName="BTC_goods_wareImg"></table>
+    <table schema="" tableName="BTC_goods_warePrice"></table>
+    <table schema="" tableName="BTC_market_orderDetail"></table>
+    <table schema="" tableName="BTC_market_orderReturn"></table>
+    <table schema="" tableName="BTC_market_sorder"></table>
+    <table schema="" tableName="BTC_market_store"></table>
+    <table schema="" tableName="BTC_market_user"></table>
+    <table schema="" tableName="BTC_market_wareClassificationType"></table>
+    <table schema="" tableName="btc_Preferential_detail" ></table>
+    <table schema="" tableName="btc_Preferential_packages" ></table>
+    <table schema="" tableName="btc_PreferentialWare" ></table>
+    <table schema="" tableName="BTC_sys_coupon" ></table>
+    <table schema="" tableName="BTC_sys_userGrade" ></table>
+    <table schema="" tableName="BTC_sys_wareActivity" ></table>
+    <table schema="" tableName="BTC_sys_wareActivityType" ></table>
+    <table schema="" tableName="BTC_sys_wareActivityWT" ></table>
+    <table schema="" tableName="BTC_sys_wareBrand" ></table>
+    <table schema="" tableName="BTC_sys_wareCftBrand" ></table>
+    <table schema="" tableName="BTC_sys_wareCftSpec" ></table>
+    <table schema="" tableName="BTC_sys_wareClassificationType" ></table>
+    <table schema="" tableName="BTC_sys_wareSpec" ></table>
+    <table schema="" tableName="BTC_user_cart" ></table>
+    <table schema="" tableName="BTC_user_coupon" ></table>
+    <table schema="" tableName="BTC_user_forder" ></table>
+    <table schema="" tableName="BTC_user_userCredit" ></table>
+    <table schema="" tableName="btc_ware_store" ></table>
+    <table schema="" tableName="user_info_receiptAddr" ></table>
+    <table schema="" tableName="user_info_userInfo" ></table>
+    <table schema="" tableName="user_pay_payAccount" ></table>
+    <table schema="" tableName="btc_expressPrice" ></table>
   </context>
 </generatorConfiguration>
