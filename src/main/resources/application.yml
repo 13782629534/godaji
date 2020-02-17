@@ -1,0 +1,16 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://l47.111.31.86:3306/godaji?characterEncoding=UTF-8
+    username: godaji
+    password: godaji12ZS#
+logging:
+  level:
+    com:
+      woniu:
+        testcache:
+          mapper: debug
+
