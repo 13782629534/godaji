@@ -192,4 +192,17 @@ public class BtcSysWarespec {
     public void setThenote(String thenote) {
         this.thenote = thenote;
     }
+
+
+    @Override
+    public String toString() {
+        return "BtcSysWarespec{" +
+                "warespecid=" + warespecid +
+                ", warespec='" + warespec + '\'' +
+                ", isdelete=" + isdelete +
+                ", iscurrent=" + iscurrent +
+                ", sortnum=" + sortnum +
+                ", thenote='" + thenote + '\'' +
+                '}';
+    }
 }
