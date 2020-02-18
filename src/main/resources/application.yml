@@ -2,15 +2,26 @@ server:
   port: 8088
 
 spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://l47.111.31.86:3306/godaji?characterEncoding=UTF-8
     username: godaji
     password: godaji12ZS#
+  server:
+    jsp-servlet:
+      init-parameters:
+        development: true
 logging:
   level:
     com:
       woniu:
         testcache:
           mapper: debug
+
+
+
 
