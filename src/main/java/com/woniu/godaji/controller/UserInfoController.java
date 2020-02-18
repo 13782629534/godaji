@@ -13,6 +13,7 @@ import java.util.UUID;
 public class UserInfoController {
 
     //测试
+
     @Resource
     private IBTC_sys_wareSpec ibtc_sys_wareSpec;
 
