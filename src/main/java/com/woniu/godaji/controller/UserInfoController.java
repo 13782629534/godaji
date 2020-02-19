@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 import java.util.UUID;
 
 @Controller
@@ -36,11 +37,14 @@ public class UserInfoController {
         }
         return "buok";
     }
+
     @RequestMapping("/select")
-    public BtcSysWarespec select(){
+    public String select(HttpSession session){
         System.out.println(ibtc_sys_wareSpec.selectBtcSysWarespec());
+        List<BtcSysWarespec> list =ibtc_sys_wareSpec.selectBtcSysWarespec();
+        session.setAttribute("list",list);
         System.out.println("djshdjshfdshfjhsdfs");
-       return ibtc_sys_wareSpec.selectBtcSysWarespec();
+       return "goodsList";
     }
 
 }

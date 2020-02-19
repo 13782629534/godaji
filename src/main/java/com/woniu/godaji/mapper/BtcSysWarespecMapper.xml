@@ -300,4 +300,8 @@
       theNote = #{thenote,jdbcType=VARCHAR}
     where wareSpecID = #{warespecid,jdbcType=INTEGER}
   </update>
+
+  <select id="selectAll" resultType="com.woniu.godaji.pojo.BtcSysWarespec">
+    select * from BTC_sys_wareSpec;
+  </select>
 </mapper>

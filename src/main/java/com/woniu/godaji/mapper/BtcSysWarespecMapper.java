@@ -93,4 +93,6 @@ public interface BtcSysWarespecMapper {
      * @mbggenerated Tue Feb 18 00:31:41 CST 2020
      */
     int updateByPrimaryKey(BtcSysWarespec record);
+
+    List<BtcSysWarespec> selectAll();
 }
