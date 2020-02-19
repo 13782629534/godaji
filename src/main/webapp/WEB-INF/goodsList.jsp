@@ -12,6 +12,7 @@
     <title>Title</title>
     <link href="css/bootstrap.min.css" type="text/css" rel="styleSheet" />
 </head>
+
 <body>
 ${list}
 <table class="table table-bordered table-striped table-hover table-condensed" style="width: 600px;" align="center">
