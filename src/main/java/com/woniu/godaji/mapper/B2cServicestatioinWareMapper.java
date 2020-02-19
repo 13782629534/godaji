@@ -93,4 +93,6 @@ public interface B2cServicestatioinWareMapper {
      * @mbggenerated Tue Feb 18 00:31:41 CST 2020
      */
     int updateByPrimaryKey(B2cServicestatioinWare record);
+
+    List<B2cServicestatioinWare> selectAll();
 }

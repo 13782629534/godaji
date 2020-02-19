@@ -17,12 +17,12 @@ public class UserInfoController {
     @Resource
     private IBTC_sys_wareSpec ibtc_sys_wareSpec;
 
-    @GetMapping("/gosave")
+    @GetMapping("/golist")
     public String goSave(ModelMap map, HttpSession session){
         String token = UUID.randomUUID().toString();//生成一个令牌
         map.put("token",token);
         session.setAttribute("token",token);
-        return "userinfo";
+        return "index";
 
     }
 
@@ -39,6 +39,8 @@ public class UserInfoController {
     @RequestMapping("/select")
     public BtcSysWarespec select(){
         System.out.println(ibtc_sys_wareSpec.selectBtcSysWarespec());
+        System.out.println("djshdjshfdshfjhsdfs");
        return ibtc_sys_wareSpec.selectBtcSysWarespec();
     }
+
 }

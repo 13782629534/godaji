@@ -300,4 +300,8 @@
       CFDiscountValue = #{cfdiscountvalue,jdbcType=DECIMAL}
     where warePriceID = #{warepriceid,jdbcType=INTEGER}
   </update>
+  
+  <select id="selectAll" resultType="com.woniu.godaji.pojo.B2cServicestatioinWare">
+    select * from B2C_serviceStatioin_ware;
+  </select>
 </mapper>

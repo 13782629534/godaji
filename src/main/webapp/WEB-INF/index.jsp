@@ -76,7 +76,7 @@
 								
 									<li><a href="findAllG.action" target="ifs">店内商品分类管理</a></li>
 
-									<li><a href="#" target="ifs">商品管理</a></li>
+									<li><a href="/select" target="ifs">商品管理</a></li>
 									<li><a href="#" target="ifs">人员管理</a></li>
 									<li><a href="#" target="ifs">快递模板</a></li>
 									<li><a href="#" target="ifs">库存管理</a></li>
